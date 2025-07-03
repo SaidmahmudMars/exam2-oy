@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MOVIES!</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>MOVIES!</h1>
+
+  <div class="controls">
+    <input type="text" id="searchInput" placeholder="Search movie...">
+    <select id="sortSelect">
+      <option value="name-asc">Name: A → Z</option>
+      <option value="name-desc">Name: Z → A</option>
+      <option value="rating-desc">Rating: High → Low</option>
+      <option value="year-desc">Year: New → Old</option>
+    </select>
+    <button onclick="searchMovies()">Search</button>
+  </div>
+
+  <div class="movie-grid" id="movieGrid"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
